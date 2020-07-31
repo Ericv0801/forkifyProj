@@ -17,7 +17,6 @@ import { elements, renderLoader, clearLoader, elementStrings } from "./views/bas
  */
 
 const state = {};
-window.state = state;
 
 /**
  * SEARCH CONTROLLER
@@ -73,7 +72,6 @@ elements.searchResPages.addEventListener("click", e => {
 const controlRecipe = async () => {
   //Get ID from URL
   const id = window.location.hash.replace("#", "");
-  console.log(id);
 
   if (id) {
     //Prepare UI for changes
@@ -116,6 +114,7 @@ const controlRecipe = async () => {
 /**
  * LIST CONTROLLER
  */
+
 const controlList = () => {
 
     //Create a new list IF there is non yet
@@ -223,5 +222,3 @@ elements.recipe.addEventListener('click', e =>{
     }
 })
 
-const l = new List();
-window.l = new List();
